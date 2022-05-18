@@ -3,5 +3,9 @@ Theme Name: Sivitri */
 
 body{
     background-color: coral;
-    color: darkmagenta;
+    color: azure;
+    
+}
+#siteTitle{
+    color: rgb(238, 238, 238);
 }
