@@ -1,0 +1,22 @@
+/* 
+Theme Name: Site Vitrine
+*/
+
+.custom-logo-link {
+    width: 50px !important;
+    margin-right: 5px !important;
+}
+
+.custom-logo {
+    display: inline-block;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+#logoTitle {
+    color: #fff !important;
+}
+
+#logoTitle:hover {
+    color: goldenrod !important;
+}
