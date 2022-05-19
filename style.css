@@ -1,11 +1,21 @@
 /* 
 Theme Name: Sivitri */
 
-body{
-    background-color: coral;
-    color: azure;
-    
+.custom-logo {
+    display: inline-block;
+    height: 50px !important;
+    width: 50px !important;
 }
+
+.custom-logo-link {
+    margin-right: 5px !important;
+    margin-left: 5px !important;
+}
+
 #siteTitle{
     color: rgb(238, 238, 238);
+}
+
+#siteTitle:hover {
+    color: goldenrod !important;
 }
