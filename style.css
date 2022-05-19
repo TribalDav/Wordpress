@@ -2,10 +2,16 @@
 Theme Name: Sivitri */
 
 body{
-    background-color: coral;
-    color: azure;
     
 }
+
+.custom-logo{
+    display:inline-block;
+    width:100px;
+    height:100px;
+}
+
+
 #siteTitle{
     color: rgb(238, 238, 238);
 }
