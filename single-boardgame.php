@@ -12,6 +12,7 @@ if (have_posts()) :
             <div>Age conseillé : <?= the_field('age') ?> </div>
             <div>Durée de la partie : <?= the_field('duree_de_la_partie') ?> </div>
             <div><?= the_taxonomies() ?></div>
+            <hr>
         </div>
 <?php endwhile;
 endif;
