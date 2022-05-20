@@ -14,6 +14,8 @@ if (have_posts()) :
                 </div>
                 <div class="col">
                     <p><?php the_field('texte_a_droite') ?></p>
+                    <div class="container">
+  
                 </div>
             </div>
         </div>
