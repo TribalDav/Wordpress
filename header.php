@@ -4,7 +4,7 @@ wp_head();
 
 ?>
 
-<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+<nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
     <?php the_custom_logo() ?>
     <a class="navbar-brand" href="#">

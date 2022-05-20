@@ -1,11 +1,39 @@
 /* 
 Theme Name: Sivitri */
-/*body{
-    background-color: indianred;
-   
+
+.backgroundImg {
+    background-image: url('assets/image/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container{
+.filterImg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(56, 67, 78, 0.269)
+}
+
+.positionTitle {
+    color: aliceblue;
+    font-size: 20rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animate__lightSpeedInLeft {
+    --animate-duration: 3s;
+  }
+  
+.custom-logo {
+    display: inline-block;
+    height: 50px !important;
+    width: 50px !important;
+}
+
+/*.container{
     background-color:whitesmoke;
     /*display: flex;
    
@@ -25,49 +53,11 @@ Theme Name: Sivitri */
     color: rgb(238, 238, 238);
 }
 
-#siteTitle:hover {
+#siteTitle:hover, .nav-link:hover {
     color: goldenrod !important;
 }
 
-body,h3{font-family: "Raleway", sans-serif}
-
-body, html {
-  height: 100%;
-  line-height: 1.8;
+.taxo-title a {
+    color: black;
+    text-decoration: none;
 }
-
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
-
-
-
-
-
-/*#date{
-    color: blue;
-
-}
-titre
-.text-center{
-
-}
-
-#texte{
- text-align: justify;  
-
- 
-}
-
-date,nombre etc
-.haut{
-  color: black;
-}*/
