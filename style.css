@@ -50,3 +50,9 @@ Theme Name: Sivitri */
     color: black;
     text-decoration: none;
 }
+#erreurCode{
+    color: rgb(180, 7, 7);
+}
+#erreurMsg{
+    color: rgb(180, 7, 7);
+}
