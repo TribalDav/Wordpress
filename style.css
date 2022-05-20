@@ -10,7 +10,7 @@ Theme Name: Sivitri */
 .filterImg {
     width: 100%;
     height: 100%;
-    background-color: rgba(56, 67, 78, 0.269)
+    background-color: rgba(139, 110, 110, 0.269)
 }
 
 .positionTitle {
@@ -69,4 +69,12 @@ Theme Name: Sivitri */
 
 .fa-heart:hover {
     color: red !important;
+}
+
+#erreurCode{
+    color: rgb(180, 7, 7);
+}
+
+#erreurMsg{
+    color: rgb(180, 7, 7);
 }
