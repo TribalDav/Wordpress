@@ -50,3 +50,23 @@ Theme Name: Sivitri */
     color: black;
     text-decoration: none;
 }
+
+.col-3 .card:hover {
+    box-shadow:  0 .5rem 1rem rgb(15, 53, 91) !important;
+}
+
+.col-4 .card:hover {
+    box-shadow:  0 .5rem 1rem rgb(60, 126, 106) !important;
+}
+
+.iconStyle {
+    font-size: 70px !important;
+}
+
+.iconStyle:hover {
+    color:rgb(59, 202, 11) ;
+}
+
+.fa-heart:hover {
+    color: red !important;
+}
