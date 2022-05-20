@@ -2,7 +2,7 @@
 Theme Name: Sivitri */
 
 .backgroundImg {
-    background-image: url('http://localhost:8080/wordpressSiteVitrine/wp-content/uploads/2022/05/background.jpg');
+    background-image: url('assets/image/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
