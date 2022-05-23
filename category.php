@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?php
 get_header();
 
@@ -14,9 +13,3 @@ if (have_posts()) :
 endif;
 
 get_footer();
-=======
-ceci est mon template de catégories
-
-<?php
-
->>>>>>> 69fcf56fc520b857135856e07467a2d00816a3d5
