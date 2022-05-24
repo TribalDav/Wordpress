@@ -71,7 +71,7 @@ function montheme_menu_link_atts($attributes)
     return $attributes;
 }
 
-// Réduit la taille des excerpt() à 30. Défaut à 55.
+// Réduit la taille des excerpt() à 15. Défaut à 55.
 function montheme_custom_excerpt_length($length)
 {
     return 15;
