@@ -13,7 +13,7 @@ if (have_posts()) :
                             <div >
                           <i class="fa-solid fa-money-bill-1 fa-2x"></i> : <?php the_field('prix')?>
                             </div> 
-                            <div ><i class="fa-solid fa-person-circle-plus fa-2x"></i>: <?= the_field('age') ?> </div>
+                            <div class="mt-5"><i class="fa-solid fa-cake-candles fa-2x"></i>: <?= the_field('age') ?> </div>
                         </div>
                         <div class="col-4">
 
@@ -21,7 +21,7 @@ if (have_posts()) :
                         </div>
                         <div class="col-4">
                             <div ><i class="fa-solid fa-users-line fa-2x"></i> : <?= the_field('nombre_de_joueurs') ?> </div>
-                            <div > <i class="fa-solid fa-stopwatch fa-2x"></i>: <?= the_field('duree_de_la_partie') ?> </div>
+                            <div class="mt-5"> <i class="fa-solid fa-stopwatch fa-2x"></i>: <?= the_field('duree_de_la_partie') ?> </div>
                         </div>
                     </div>
                     
@@ -29,6 +29,7 @@ if (have_posts()) :
             </div>
             
             <div id="texte"><?php the_content() ?></div>
+            
            
             
            

@@ -1,6 +1,21 @@
 /* 
 Theme Name: Sivitri */
 
+/*responsive tablette portrait*/
+@media (max-width: 811px) and (min-width: 376px) {
+    .positionTitle{
+       font-size: 2rem !important;
+
+    }
+.backgroundImg {
+   
+    height: 50% !important;
+    
+}
+ 
+    
+}
+
 .backgroundImg {
     background-image: url('assets/image/background.jpg');
     background-repeat: no-repeat;
@@ -84,3 +99,20 @@ Theme Name: Sivitri */
     height: 300px !important;
     width: 300px!important ;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

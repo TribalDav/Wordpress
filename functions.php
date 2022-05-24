@@ -13,7 +13,9 @@ function montheme_scripts()
     wp_enqueue_style('animate', 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_style('ball', get_template_directory_uri().'/ball.css');
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', [], false, true);
+
 }
 function montheme_custom_types()
 {
@@ -59,6 +61,8 @@ function montheme_menu_link_atts($attributes)
     $attributes['class'] = 'nav-link';
     return $attributes;
 }
+
+
 
 
 add_action('after_setup_theme', 'montheme_setup');
