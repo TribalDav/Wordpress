@@ -8,7 +8,7 @@ $boardgame = new WP_Query([
 
 ?>
 <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-4">
         <?php
         if ($boardgame->have_posts()) :
             while ($boardgame->have_posts()) : the_post();
@@ -17,7 +17,7 @@ $boardgame = new WP_Query([
 
         ?>
 
-                    <div class="col-3">
+                    <div class="col-12 col-lg-3">
                         <div class="card shadow bg-body rounded">
                             <a href="<?= the_permalink() ?>">
                                 <div class="text-center p-1"><?= the_post_thumbnail() ?></div>
