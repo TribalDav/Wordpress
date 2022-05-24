@@ -1,5 +1,37 @@
 /* 
-Theme Name: Sivitri */
+Theme Name: Site Vitrine
+*/
+
+@media screen and (max-width: 376px) {
+    .mediaNav {
+        text-align: center;
+    }
+
+    .backgroundImg {
+        height: 50% !important;
+    }
+
+    .positionTitle {
+        font-size: 5rem !important;
+    }
+
+    .mediaCarousel {
+        height: 50% !important;
+    }
+
+    .mediaTitle {
+        font-size: 20px !important;
+    }
+
+    .mediaDirection {
+        display:flex;
+        flex-direction: column-reverse;
+    }
+
+    .mediaCard {
+        margin-bottom: 1rem !important;
+    }
+}
 
 /*responsive tablette portrait*/
 @media (max-width: 811px) and (min-width: 376px) {
@@ -29,14 +61,14 @@ Theme Name: Sivitri */
 }
 
 .positionTitle {
-    color:cornflowerblue;
-    font-size: 5rem;
+    color:rgb(255, 255, 255);
+    font-size: 15rem;
     font-family:Arial, Helvetica, sans-serif;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items:baseline;
+    align-items:center;
 }
 
 .animate__lightSpeedInLeft {

@@ -15,7 +15,7 @@ wp_head();
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse mediaNav" id="navbarSupportedContent">
       <?php wp_nav_menu([
         'menu' => "mainMenu",
         'container' => false,
@@ -23,5 +23,4 @@ wp_head();
       ]); ?>
 
     </div>
-  </div>
 </nav>

@@ -1,5 +1,6 @@
 <?php
 
+// Ajout de différents options dans admin et menu
 function montheme_setup()
 {
     add_theme_support('post-thumbnails');
@@ -7,6 +8,7 @@ function montheme_setup()
     register_nav_menu('main', 'menu_principal');
 }
 
+// Ajout de librairies, css et js
 function montheme_scripts()
 {
     wp_enqueue_style('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css');
@@ -17,6 +19,8 @@ function montheme_scripts()
     wp_enqueue_script('bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js', [], false, true);
 
 }
+
+// Création de 'boardgame' dans l'admin
 function montheme_custom_types()
 {
     register_post_type('boardgame', [
@@ -25,16 +29,21 @@ function montheme_custom_types()
             'singular_name' => 'Boardgame'
         ],
         'public' => true,
+        'has_archive' => true,
         'menu_position' => 3,
         'menu_icon' => 'dashicons-buddicons-activity',
         'show_in_rest' => true,
         'supports' => [
-            'title', 'editor', 'thumbnail'
+            'title',
+            'editor',
+            'thumbnail',
         ],
         'has_archive' => true,
         'taxonomies' => ['gameCats']
     ]);
 }
+
+// Création de taxonomie
 function montheme_custom_taxonomies()
 {
     register_taxonomy('gameCats', 'boardgame', [
@@ -50,24 +59,31 @@ function montheme_custom_taxonomies()
     ]);
 }
 
+// Ajout de la classe nav-item au <li> du menu
 function montheme_menu_cls($classes)
 {
     $classes[] = 'nav-item';
     return $classes;
 }
 
+// Ajout de la classe nav-link au <a> dans les <li> du menu
 function montheme_menu_link_atts($attributes)
 {
     $attributes['class'] = 'nav-link';
     return $attributes;
 }
 
+// Réduit la taille des excerpt() à 15. Défaut à 55.
+function montheme_custom_excerpt_length($length)
+{
+    return 15;
+}
 
-
-
+// Hook et filter pour activer les fonctions
 add_action('after_setup_theme', 'montheme_setup');
 add_action('init', 'montheme_custom_types');
 add_action('init', 'montheme_custom_taxonomies');
 add_action('wp_enqueue_scripts', 'montheme_scripts');
 add_filter('nav_menu_css_class', 'montheme_menu_cls');
 add_filter('nav_menu_link_attributes', 'montheme_menu_link_atts');
+add_filter('excerpt_length', 'montheme_custom_excerpt_length', 999);

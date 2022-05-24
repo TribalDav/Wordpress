@@ -2,16 +2,15 @@
 
 get_header();
 $taxo = get_queried_object();
-
 ?>
 <div class="container">
-    <h1 class="text-center taxo-title"><?= the_taxonomies() ?>(<?= $taxo->count; ?>)</h1>
+    <h1 class="text-center"><?= $taxo->name;  ?>(<?= $taxo->count; ?>)</h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
         <?php
         if (have_posts()) :
             while (have_posts()) : the_post();
         ?>
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="card shadow bg-body rounded">
                         <a href="<?= the_permalink() ?>">
                             <div class="text-center p-2"><?= the_post_thumbnail() ?></div>
