@@ -74,7 +74,7 @@ function montheme_menu_link_atts($attributes)
 // Réduit la taille des excerpt() à 30. Défaut à 55.
 function montheme_custom_excerpt_length($length)
 {
-    return 30;
+    return 15;
 }
 
 // Hook et filter pour activer les fonctions
