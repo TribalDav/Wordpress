@@ -63,6 +63,7 @@ function montheme_menu_link_atts($attributes)
     return $attributes;
 }
 
+
 add_action('after_setup_theme', 'montheme_setup');
 add_action('init', 'montheme_custom_types');
 add_action('init', 'montheme_custom_taxonomies');
