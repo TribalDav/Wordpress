@@ -6,6 +6,7 @@ if (have_posts()) :
         <div class="container">
             <h2 class="text-center text-uppercase"><?php the_title() ?></h2>
             <div class="row">
+                <!-- DIV image et DIV symboles -->
                 <div class="col-12 col-lg-3 text-center p-2"><?php the_post_thumbnail();  ?></div>
                 <div class="col col-lg-9 align-self-center">
                     <div class="row">
@@ -34,22 +35,19 @@ if (have_posts()) :
 
                 </div>
             </div>
-
-            <div id="texte"><?php the_content() ?></div>
-
-            <div><?= the_taxonomies() ?></div>
+            <!-- DIV description -->
+            <div id="texte">
+                <?php the_content() ?>
+            </div>
             <hr>
+            <!-- DIV taxonomie -->
+            <div class="mb-2">
+                <?= the_taxonomies() ?>
+            </div>
+
         </div>
 <?php endwhile;
 endif; ?>
-
-
-
-
-
-
-
-
 
 <?php
 get_footer();
