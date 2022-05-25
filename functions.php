@@ -40,8 +40,31 @@ function montheme_custom_types()
         ],
         'has_archive' => true,
         'taxonomies' => ['gameCats']
+
+    ]);
+    //crétion de page de tests dans l'admin
+    register_post_type('tests', [
+        'labels' => [
+            'name' => 'Tests',
+            'singular_name' => 'Tests'
+        ],
+        'public' => true,
+        'has_archive' => true,
+        'menu_position' => 3,
+        'menu_icon' => 'dashicons-welcome-view-site',
+        'show_in_rest' => true,
+        'supports' => [
+            'title',
+            'editor',
+            'thumbnail',
+        ]
+        
+        
     ]);
 }
+
+
+
 
 // Création de taxonomie
 function montheme_custom_taxonomies()

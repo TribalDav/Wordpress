@@ -1,27 +1,23 @@
 <?php
-// page qui affiche tous nos articles
 get_header();
-$boardgame = new WP_Query([
-    'post_type' => 'boardgame',
+$tests = new WP_Query([
+    'post_type' => 'tests',
 ]);
-
-
-
 ?>
 <div class="container">
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-4">
         <?php
-        if ($boardgame->have_posts()) :
-            while ($boardgame->have_posts()) : the_post();
-                if (isset($boardgame)) :
-                    $boardgame->the_post();
+        if ($tests->have_posts()) :
+            while ($tests->have_posts()) : the_post();
+                if (isset($tests)) :
+                    $tests->the_post();
 
         ?>
 
                     <div class="col-12 col-lg-4">
                         <div class="card shadow bg-body rounded homeCard">
                             <a href="<?= the_permalink() ?>">
-                                <div class="text-center p-1"><?= the_post_thumbnail() ?></div>
+                                <img src="<?php echo the_field('image')?>" alt="">
                             </a>
                             <div class="card-body">
                                 <h5 class="card-title text-center"><?= the_title() ?></h5>
@@ -40,5 +36,8 @@ $boardgame = new WP_Query([
 </div>
 <?php
 
+
+
+
+
 get_footer();
-?>
