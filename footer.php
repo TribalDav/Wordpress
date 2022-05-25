@@ -45,7 +45,7 @@ wp_footer();
           <div class="d-flex flex-column flex-sm-row w-100 gap-2">
             <label for="newsletter1" class="visually-hidden">Email</label>
             <input id="newsletter1" type="text" class="form-control" placeholder="Email">
-            <button class="btn btn-primary " type="button">S'abonner </button>
+            <button class="btn btn-style " type="button">S'abonner </button>
           </div>
         </form>
       </div>

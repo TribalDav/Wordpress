@@ -43,7 +43,7 @@ get_header();
 
             <!-- Submit button -->
             <div class="d-grid">
-              <button class="btn btn-primary btn-lg " id="submitButton" type="submit">Soumettre</button>
+              <button class="btn btn-style btn-lg " id="submitButton" type="submit">Soumettre</button>
             </div>
           </form>
           <!-- End of contact form -->

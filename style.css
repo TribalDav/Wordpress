@@ -113,11 +113,19 @@ Theme Name: Site Vitrine
     color: red !important;
 }
 
-/* TAILLLE PHOTO DANS LE CARROUSEL */
+/* TAILLE PHOTO DANS LE CARROUSEL */
 .photocarrousel{
     height: 300px !important;
     width: 300px!important ;
 }
+  
+/*couleur bouton s'abonner et formulaire soumettre*/
+.btn-style{
+    background: rgb(41, 139, 189) !important;
+    color: white;  
+}
+
+
 
 
 
