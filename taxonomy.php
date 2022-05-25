@@ -10,8 +10,8 @@ $taxo = get_queried_object();
         if (have_posts()) :
             while (have_posts()) : the_post();
         ?>
-                <div class="col-12 col-lg-3">
-                    <div class="card shadow bg-body rounded">
+                <div class="col-12 col-lg-4">
+                    <div class="card shadow bg-body rounded taxoCard">
                         <a href="<?= the_permalink() ?>">
                             <div class="text-center p-2"><?= the_post_thumbnail() ?></div>
                         </a>

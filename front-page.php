@@ -66,8 +66,8 @@ if (have_posts()) :
     while (have_posts()) : the_post(); ?>
         <div class="container p-3">
             <div class="row">
-                <div class="col text-center"><img class="img-fluid" src="<?php the_field('image_a_gauche') ?>" alt=""></div>
-                <div class=" mediatexteaccueil col d-flex flex-column justify-content-center"><?= the_field('texte_a_droite') ?></div>
+                <div class="col col-lg-6 text-center"><img class="img-fluid" src="<?php the_field('image_a_gauche') ?>" alt=""></div>
+                <div class=" mediatexteaccueil col-12 col-lg-6 d-flex flex-column justify-content-center"><?= the_field('texte_a_droite') ?></div>
             </div>
             <div class="row mediaDirection">
                 <div class="col-12 col-lg-6 d-flex flex-column justify-content-center"><?= the_field('texte_a_gauche') ?></div>
@@ -85,7 +85,7 @@ if (have_posts()) :
             </div>
             <div class="row text-center">
                 <div class="col-12 col-lg-4 mediaCard">
-                    <div class="card shadow-lg bg-body rounded">
+                    <div class="card shadow-lg bg-body rounded taxoCard">
                         <div><i class="fa-solid fa-users iconStyle p-3 m-1"></i></div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Utilisateurs</h5>
@@ -94,7 +94,7 @@ if (have_posts()) :
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mediaCard">
-                    <div class="card shadow-lg bg-body rounded">
+                    <div class="card shadow-lg bg-body rounded taxoCard">
                         <div><i class="fa-solid fa-dice-six iconStyle p-3 m-1"></i></div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Jeux</h5>
@@ -103,7 +103,7 @@ if (have_posts()) :
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mediaCard">
-                    <div class="card shadow-lg bg-body rounded">
+                    <div class="card shadow-lg bg-body rounded taxoCard">
                         <div><i class="fa-solid fa-heart iconStyle p-3 m-1"></i></div>
                         <div class="card-body">
                             <h5 class="card-title text-center">Fans</h5>
@@ -112,28 +112,28 @@ if (have_posts()) :
                     </div>
                 </div>
             </div>
- 
+
             <div class="row text-center">
-                <div class="col-3">
-                <div class="ball-loader m-5">loading...</div>
-                </div>  
-                <div class="col-3">
-                <div class="ball-loader m-5">loading...</div>
-                </div>  
-                <div class="col-3">
+                <div class="col-6 col-lg-3">
                     <div class="ball-loader m-5">loading...</div>
-                </div>  
-                <div class="col-3">
+                </div>
+                <div class="col-6 col-lg-3">
                     <div class="ball-loader m-5">loading...</div>
-                </div>  
-            </div>           
-            
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="ball-loader m-5">loading...</div>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <div class="ball-loader m-5">loading...</div>
+                </div>
+            </div>
+
         </div>
 
-        
 
 
-        
+
+
 <?php endwhile;
 
 endif;

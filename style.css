@@ -33,21 +33,6 @@ Theme Name: Site Vitrine
     }
 }
 
-/*responsive tablette portrait*/
-@media (max-width: 811px) and (min-width: 376px) {
-    .positionTitle{
-       font-size: 2rem !important;
-
-    }
-.backgroundImg {
-   
-    height: 50% !important;
-    
-}
- 
-    
-}
-
 .backgroundImg {
     background-image: url('assets/image/background.jpg');
     background-repeat: no-repeat;
@@ -100,11 +85,11 @@ Theme Name: Site Vitrine
     color: black;
     text-decoration: none;
 }
-.col-3 .card:hover {
+.taxoCard:hover {
     box-shadow:  0 .5rem 1rem rgb(15, 53, 91) !important;
 }
 
-.col-4 .card:hover {
+.homeCard:hover {
     box-shadow:  0 .5rem 1rem rgb(60, 126, 106) !important;
 }
 

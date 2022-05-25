@@ -17,8 +17,8 @@ $boardgame = new WP_Query([
 
         ?>
 
-                    <div class="col-12 col-lg-3">
-                        <div class="card shadow bg-body rounded">
+                    <div class="col-12 col-lg-4">
+                        <div class="card shadow bg-body rounded homeCard">
                             <a href="<?= the_permalink() ?>">
                                 <div class="text-center p-1"><?= the_post_thumbnail() ?></div>
                             </a>
