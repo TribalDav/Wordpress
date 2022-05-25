@@ -2,6 +2,7 @@
 Theme Name: Site Vitrine
 */
 
+/* Responsive smartphone */
 @media screen and (max-width: 376px) {
     .mediaNav {
         text-align: center;
@@ -33,33 +34,21 @@ Theme Name: Site Vitrine
     }
 }
 
-/*responsive tablette portrait*/
-@media (max-width: 811px) and (min-width: 376px) {
-    .positionTitle{
-       font-size: 2rem !important;
-
-    }
-.backgroundImg {
-   
-    height: 50% !important;
-    
-}
- 
-    
-}
-
+/* background image */
 .backgroundImg {
     background-image: url('assets/image/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+/* Filtre sur l'image */
 .filterImg {
     width: 100%;
     height: 100%;
     background-color: rgba(139, 110, 110, 0.269)
 }
 
+/* LE TITRE */
 .positionTitle {
     color:rgb(41, 139, 189);
     font-size: 5rem;
@@ -71,62 +60,60 @@ Theme Name: Site Vitrine
     align-items:baseline;
 }
 
+/* ANIMATION TITRE */
 .animate__lightSpeedInLeft {
     --animate-duration: 3s;
-  }
+}
   
+/* TAILLE DU LOGO DANS LE MENU */
 .custom-logo {
     display: inline-block;
     height: 50px !important;
     width: 50px !important;
 }
 
+/* MARGES AU LOGO */
 .custom-logo-link {
     margin-right: 10px !important;
     margin-left: 10px !important;
 }
 
-
-
+/* COULEUR DU TITRE DANS LA NAV */
 #siteTitle{
     color: rgb(238, 238, 238);
 }
 
+/* COULEUR HOVER DU TITRE DANS LA NAV */
 #siteTitle:hover, .nav-link:hover {
     color: goldenrod !important;
 }
 
-.taxo-title a {
-    color: black;
-    text-decoration: none;
-}
-.col-3 .card:hover {
+/* SHADOW CARD DE LA PAGE TAXONOMIE */
+.taxoCard:hover {
     box-shadow:  0 .5rem 1rem rgb(15, 53, 91) !important;
 }
 
-.col-4 .card:hover {
+/* SHADOW CARD DANS NOTRE CATALOGUE */
+.homeCard:hover {
     box-shadow:  0 .5rem 1rem rgb(60, 126, 106) !important;
 }
 
+/* TAILLE DES ICONES DANS L'ACCUEIL */
 .iconStyle {
     font-size: 70px !important;
 }
 
+/* COULEUR DES ICONES DANS L'ACCUEIL */
 .iconStyle:hover {
     color:rgb(41, 139, 189) ;
 }
 
+/* COULEUR DES ICONES DANS L'ACCUEIL */
 .fa-heart:hover {
     color: red !important;
 }
 
-#erreurCode{
-    color: rgb(180, 7, 7);
-}
-
-#erreurMsg{
-    color: rgb(180, 7, 7);
-}
+/* TAILLLE PHOTO DANS LE CARROUSEL */
 .photocarrousel{
     height: 300px !important;
     width: 300px!important ;
