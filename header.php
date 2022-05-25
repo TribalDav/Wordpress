@@ -3,7 +3,7 @@ wp_head();
 
 
 ?>
-
+<!-- NavBar -->
 <nav class="navbar sticky-top navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
     <?php the_custom_logo() ?>
@@ -15,6 +15,7 @@ wp_head();
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- DIV contenant le main menu -->
     <div class="collapse navbar-collapse mediaNav" id="navbarSupportedContent">
       <?php wp_nav_menu([
         'menu' => "mainMenu",

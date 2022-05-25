@@ -1,6 +1,8 @@
 <?php
 // page qui affiche tous nos articles
 get_header();
+
+// Instance de la classe WP_QUERY pour faire une requête affichant les articles de boardgames
 $boardgame = new WP_Query([
     'post_type' => 'boardgame',
 ]);
@@ -14,9 +16,8 @@ $boardgame = new WP_Query([
             while ($boardgame->have_posts()) : the_post();
                 if (isset($boardgame)) :
                     $boardgame->the_post();
-
         ?>
-
+                    <!-- CARDS -->
                     <div class="col-12 col-lg-4">
                         <div class="card shadow bg-body rounded homeCard">
                             <a href="<?= the_permalink() ?>">

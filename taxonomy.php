@@ -4,12 +4,14 @@ get_header();
 $taxo = get_queried_object();
 ?>
 <div class="container">
+    <!-- TITRE ET NOMBRE EN UTILISANT L'OBJET get_queried_object -->
     <h1 class="text-center"><?= $taxo->name;  ?> <span class="badge text-bg-dark"><?= $taxo->count; ?></span></h1>
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3">
         <?php
         if (have_posts()) :
             while (have_posts()) : the_post();
         ?>
+                <!-- CARDS -->
                 <div class="col-12 col-lg-4">
                     <div class="card shadow bg-body rounded taxoCard">
                         <a href="<?= the_permalink() ?>">
