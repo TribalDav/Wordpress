@@ -24,23 +24,26 @@ get_header();
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active h-100">
-                <img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/cathedrale.png" class="img-fluid w-100 d-block photocarrousel m-auto mt-3" alt="...">
+                <a href="http://localhost:8080/wordpress2/boardgame/la-cathedrale-rouge/"><img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/cathedrale.png" class="img-fluid w-100 d-block photocarrousel m-auto mt-3" alt="..."></a>
+                
                 <div class="carousel-caption d-none d-md-block ">
                     <h5>La Cathédrale Rouge</h5>
                     <p>Dirigez une équipe de construction pour bâtir la cathédrale Saint-Basile sous le règne du tsar.</p>
                 </div>
             </div>
             <div class="carousel-item h-100">
-                <img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/creature.png" class="d-block w-100 photocarrousel m-auto mt-3" alt="...">
+                <a href="http://localhost:8080/wordpress2/boardgame/creature-comforts/"><img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/creature.png" class="d-block w-100 photocarrousel m-auto mt-3" alt="..."></a>
+                
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Creature Comforts</h5>
                     <p>La vie dans la forêt est très amusante, du moins pendant que le soleil brille .</p>
                 </div>
             </div>
             <div class="carousel-item h-100">
-                <img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/zero.png" class="d-block w-100 photocarrousel m-auto mt-3" alt="...">
+                <a href="http://localhost:8080/wordpress2/boardgame/blabla/"> <img src="<?php echo get_theme_root_uri() ?>/wordpress/assets/image/zero.png" class="d-block w-100 photocarrousel m-auto mt-3" alt="..."></a>
+               
                 <div class="carousel-caption d-none d-md-block">
-                    <h5>Zéro à 100l</h5>
+                    <h5>Zéro à 100</h5>
                     <p>Découvrez le jeu Zéro à 100, un jeu de connaissances pour celles et ceux qui n’en ont pas !.</p>
                 </div>
             </div>
@@ -55,10 +58,7 @@ get_header();
         </button>
     </div>
 </div>
-<div class="w-50 m-auto text-center p-3">
-    <h2 class="mediaTitle">Fonctionnalités</h2>
-    <hr>
-</div>
+
 
 <?php
 
