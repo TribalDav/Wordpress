@@ -1,10 +1,10 @@
 <?php
-
+// page qui affiche tous nos articles
 get_header();
 $boardgame = new WP_Query([
     'post_type' => 'boardgame',
 ]);
-// print_r($boardgame);
+
 
 ?>
 <div class="container">
