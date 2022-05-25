@@ -331,9 +331,9 @@
     -ms-transform-origin: 0 100%;
     -webkit-transform-origin: 0 100%;
     transform-origin: 0 100%;
-    -moz-animation: ball-loader 2500ms infinite linear;
-    -webkit-animation: ball-loader 2500ms infinite linear;
-    animation: ball-loader 2500ms infinite linear;
+    -moz-animation: ball-loader 4500ms infinite linear;
+    -webkit-animation: ball-loader 4500ms infinite linear;
+    animation: ball-loader 4500ms infinite linear;
   }
   .ball-loader:not(:required)::after {
     content: '';
